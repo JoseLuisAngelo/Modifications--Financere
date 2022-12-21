@@ -56,7 +56,7 @@ export const useStyles= makeStyles(() => ({
         letterSpacing: "0.01rem",
        
         marginLeft: 24,
-        color: "#FFFFFF",
+        color: "#A4A6B3",
       },
     
     separator: {
