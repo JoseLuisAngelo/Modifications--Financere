@@ -11,6 +11,7 @@ import IconSettings from "../../assets/menuComponent/icon-settings";
 import { useStyles } from "./menuComponent.styles";
 import { slide as Menu } from "react-burger-menu";
 import useMenuComponent from "./useMenuComponent";
+import Header from '../Header/Header'
 
 const styles = {
   bmBurgerButton: {
@@ -65,6 +66,7 @@ const MenuComponent = () => {
   const isMobile = window.innerWidth <= 1080;
 
   return (
+    <>
     <Menu
       isOpen={!isMobile || isOpen}
       noOverlay={!isMobile}
@@ -119,6 +121,8 @@ const MenuComponent = () => {
         active={isActive("/settings")}
       />
     </Menu>
+    <Header/>
+    </>
   );
 };
 
