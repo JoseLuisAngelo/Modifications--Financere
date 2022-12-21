@@ -9,7 +9,7 @@ export const BootstrapButton = withStyles({
         lineHeight: '24px',
         letterSpacing: '0.4px',
         color: '#A4A6B3',
-        opacity: 0.7,
+       
 
         fontFamily: ['Muli',
       ].join(','),
@@ -23,9 +23,7 @@ export const BootstrapButton = withStyles({
         backgroundColor: '#0062cc',
         borderColor: '#005cbf',
       },
-      '&:focus': {
-        boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-      },
+     
     },
   })(Button);
 export const useStyles= makeStyles(() => ({
@@ -35,6 +33,7 @@ export const useStyles= makeStyles(() => ({
     },
     title: {
         marginLeft: 12,
+    
     },
     activeContainer: {
         backgroundColor: "rgba(221,226,255, 0.08)",
@@ -57,7 +56,7 @@ export const useStyles= makeStyles(() => ({
         letterSpacing: "0.01rem",
        
         marginLeft: 24,
-        color: "#A4A6B3",
+        color: "#FFFFFF",
       },
     
     separator: {

@@ -39,7 +39,7 @@ const styles = {
     width: 255,
   },
   bmMenu: {
-    background: "#373a47",
+    background: "#0000ff",
   },
   bmItem: {
     outline: "none",
@@ -78,24 +78,24 @@ const MenuComponent = () => {
       </div>
 
       <MenuItemComponent
-        title="Inicio"
+        title="Programas"
         icon={IconOverview}
         onClick={() => onMenuItemClicked("/overview", { isCollapsible: true })}
         active={isActive("/overview")}
       />
       <MenuItemComponent
-        title="Trabajos"
+        title="Financiamiento"
         icon={IconTickets}
         onClick={() => onMenuItemClicked("/tickets")}
         active={isActive("/tickets")}
       />
       <MenuItemComponent
-        title="Revisar Tesis"
+        title="Unidad Solicitante"
         icon={IconIdeas}
         onClick={() => onMenuItemClicked("/ideas", { isCollapsible: true })}
         active={isActive("/ideas")}
       />
-      <MenuItemComponent
+      {/* <MenuItemComponent
         title="Listar Tesis"
         icon={IconContacts}
         onClick={() => onMenuItemClicked("/contacts")}
@@ -112,10 +112,10 @@ const MenuComponent = () => {
         icon={IconArticles}
         onClick={() => onMenuItemClicked("/articles")}
         active={isActive("/articles")}
-      />
+      /> */}
       <div className={classes.separator}></div>
       <MenuItemComponent
-        title="Settings"
+        title="Configuración"
         icon={IconSettings}
         onClick={() => onMenuItemClicked("/settings")}
         active={isActive("/settings")}

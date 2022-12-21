@@ -14,7 +14,8 @@ const Header = () => {
     <div className={classes.content}>
       <Toolbar>
         <Typography className={classes.title}></Typography>
-        <Typography className={classes.title}>Overview</Typography>
+        <Typography className={classes.title}></Typography>
+        <Typography className={classes.title}>Secretaria Administrativa y Financiera</Typography>
         <Typography className={classes.name}></Typography>
         <Stack direction="row" spacing={1}>
           <LiveSearch />

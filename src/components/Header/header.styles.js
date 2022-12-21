@@ -19,7 +19,7 @@ export const useStyles = makeStyles((theme) => ({
     fontFamily: "Muli",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: 24,
+    fontSize: 16,
     lineHeight: "30px",
     letterSpacing: 0.3,
     marginLeft:20

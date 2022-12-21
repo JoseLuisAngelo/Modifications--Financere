@@ -6,10 +6,10 @@ import IconSearch from "../../assets/headerComponent/icon-search";
 const LiveSearch = () => {
   return (
     <>
-      <Box size="small" style={{ width: 600 }}>
+      <Box size="small" style={{ width: 250 }}>
         <TextField
           size="small"
-          style={{ width: 600 }}
+          style={{ width:250 }}
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
