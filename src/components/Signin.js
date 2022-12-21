@@ -67,7 +67,7 @@ const Signin =()=>{
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Gobierno Autonomo de Tupiza
+            Gobierno Autónomo Municipal de Tupiza
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
@@ -114,7 +114,7 @@ const Signin =()=>{
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/register" variant="body2">
                   {"¿No tienes una cuenta? Registrarse"}
                 </Link>
               </Grid>
