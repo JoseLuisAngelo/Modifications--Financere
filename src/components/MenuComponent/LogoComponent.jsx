@@ -6,12 +6,12 @@ import Avatar from "@mui/material/Avatar";
 function LogoComponent() {
     const classes= useStyles()
     return (
-        <BootstrapButton className={classes.container}>
+        <BootstrapButton>
             <Avatar>  
             <img src='/images/logo.png' alt='Avatar' />    
           </Avatar>
         
-        <span className={classes.title}>Modificación Presupuestaria</span>
+        <span className={classes.titlebuton}>Modificación Presupuestaria</span>
     </BootstrapButton>
     );
 }

@@ -7,10 +7,12 @@ import IconIdeas from "../../assets/menuComponent/icon-ideas.js";
 import IconContacts from "../../assets/menuComponent/icon-contacts";
 import IconAgents from "../../assets/menuComponent/icon-agents";
 import IconArticles from "../../assets/menuComponent/icon-articles";
+import { Typography, Grid} from "@mui/material";
 import IconSettings from "../../assets/menuComponent/icon-settings";
 import { useStyles } from "./menuComponent.styles";
 import { slide as Menu } from "react-burger-menu";
 import useMenuComponent from "./useMenuComponent";
+
 import Header from '../Header/Header'
 
 const styles = {
@@ -39,7 +41,7 @@ const styles = {
     width: 255,
   },
   bmMenu: {
-    background: "#0000ff",
+    background: "#0F07B2",
   },
   bmItem: {
     outline: "none",
@@ -61,10 +63,17 @@ const MenuComponent = () => {
     isOpen,
     isActive,
     onMenuItemClicked,
-  } = useMenuComponent({ defaultPath: "/overview" });
+  } = useMenuComponent({ defaultPath: "/" });
 
   const isMobile = window.innerWidth <= 1080;
-
+  const programas  = () => {
+  
+    window.location.href='/programas'
+     }
+     const financiation  = () => {
+  
+      window.location.href='/financiation'
+       }
   return (
     <>
     <Menu
@@ -80,13 +89,13 @@ const MenuComponent = () => {
       <MenuItemComponent
         title="Programas"
         icon={IconOverview}
-        onClick={() => onMenuItemClicked("/overview", { isCollapsible: true })}
-        active={isActive("/overview")}
+        onClick={() => programas(onMenuItemClicked("/programas") )}
+        active={isActive("/programas")}
       />
       <MenuItemComponent
         title="Financiamiento"
         icon={IconTickets}
-        onClick={() => onMenuItemClicked("/tickets")}
+        onClick={() => financiation(onMenuItemClicked("/tickets"))}
         active={isActive("/tickets")}
       />
       <MenuItemComponent
@@ -122,6 +131,7 @@ const MenuComponent = () => {
       />
     </Menu>
     <Header/>
+    
     </>
   );
 };

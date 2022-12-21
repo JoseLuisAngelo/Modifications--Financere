@@ -1,18 +1,16 @@
 import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
+ 
   content: {
-    marginTop: 2,
+
+    backgroundColor: theme.palette.background.default,
+  
   },
   name: {
-    flexGrow: 4,
-    fontFamily: "Muli",
-    fontStyle: "normal",
-    fontWeight: 600,
-    fontSize: 14,
-    lineHeight: "20px",
-    textAlign: "right",
-    letterSpacing: 0.2,
+    fontWeight: 900,
+    margin: "5px",
+
   },
   title: {
     flexGrow: 4,
@@ -25,7 +23,12 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft:20
   },
 
-  imagen: {
+  avatar: {
+    width:25,
+    height:25,
     borderRadius: "50%",
+  },
+  profile:{
+
   },
 }));

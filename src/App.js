@@ -4,7 +4,8 @@ import Signin from './components/Signin'
 import Signup from  './components/Signup'
 //import {Contenedor} from './components/Contenedor'
 import MenuComponent from './components/MenuComponent/MenuComponent'
-import Header from './components/Header/Header'
+import LastDocuments  from './components/LastDocuments/LastDocuments'
+import FinanciationComponent from './components/FinanciatonComponent/FinanciationComponent';
 function App() {
   return (
     <>
@@ -15,6 +16,9 @@ function App() {
 <Route exact path="/register" component={Signup}/>
 
 <Route exact path="/contenedor" component={MenuComponent}/>
+<Route exact path="/programas" component={LastDocuments}/>
+<Route exact path="/financiation" component={FinanciationComponent}/>
+
 </Router>
       
     </>
