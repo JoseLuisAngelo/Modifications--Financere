@@ -17,7 +17,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       
-      Copyright 2023
+      DevAngelo@2023
     
     </Typography>
   );
