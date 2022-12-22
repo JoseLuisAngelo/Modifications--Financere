@@ -1,5 +1,5 @@
 import React from "react";
-import { Toolbar, Typography, Grid, Box } from "@material-ui/core";
+import { Toolbar, Typography, Hidden, Paper } from "@material-ui/core";
 import Avatar from "@mui/material/Avatar";
 import LiveSearch from "./LiveSearch";
 import IconBellNew from "../../assets/headerComponent/icon-bell-new";
@@ -13,39 +13,53 @@ const Header = () => {
   const classes = useStyles();
   return (
     <>
+    <div className={classes.root}>
+
+      <div className={classes.container}>
+        
+    
+      
+        <Hidden >
+        
+          <Paper className={classes.paper}><LiveSearch/>  <Badge badgeContent={10} color="primary">
+                <IconBellNew />
+              </Badge><Bill/></Paper>
+          
+        </Hidden>
+     
+      
+      </div>
+      <Toolbar>
+       <h2> Secretaría Municipal Administrativa y Financiera</h2>
+      </Toolbar>
+    </div>
+    {/*
       <div className={classes.content}>
         <Toolbar>
           <Typography className={classes.title}></Typography>
           <Typography className={classes.title}></Typography>
+      
           <Typography className={classes.title}>
             Secretaria Administrativa y Financiera
           </Typography>
+      
           <Typography className={classes.name}></Typography>
-          <Stack direction="row" spacing={1}>
+          <Hidden> <Stack direction="row" spacing={1}>
             <LiveSearch />
-            <MenuItem>
+            <Paper className={classes.paper}>
               <Badge badgeContent={10} color="primary">
                 <IconBellNew />
               </Badge>
-            </MenuItem>
-            <Bill />
-          </Stack>
+            </Paper>
+            <Hidden>  <Bill /></Hidden>
+          </Stack></Hidden>
         </Toolbar>
       </div>
       <div className={classes.content}>
         <div className={classes.toolbar}></div>
 
-        <Stack direction="row" spacing={1}>
-          <MenuItem></MenuItem>
-          <MenuItem></MenuItem>
-          <MenuItem></MenuItem>
-          <MenuItem></MenuItem>
-          <MenuItem></MenuItem>
-          <MenuItem></MenuItem>
-          <MenuItem></MenuItem>
-          <Typography variant="h6">La Dirección de Cultura, Turismo y Deportes a través ión conjunt lrperos 6 de et de misa, la romería al Santuario de la Virgen de Remedios, el concurso de la copla Tupiceña, y Culturales y Artísticas.</Typography>
-        </Stack>
-      </div>
+      
+  </div>*/}
     </>
   );
 };

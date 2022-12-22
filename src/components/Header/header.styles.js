@@ -1,9 +1,23 @@
 import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
- 
+  root: {
+    flexGrow: 1,
+  },
+  container: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  paper: {
+    paddingLeft: theme.spacing(-10),
+    textAlign: 'right',
+    color: theme.palette.text.secondary,
+    flex: '1 0 auto',
+    margin: theme.spacing(1),
+  },
   content: {
-
+    display: 'flex',
+    flexWrap: 'wrap',
     backgroundColor: theme.palette.background.default,
   
   },
@@ -28,7 +42,5 @@ export const useStyles = makeStyles((theme) => ({
     height:25,
     borderRadius: "50%",
   },
-  profile:{
 
-  },
 }));

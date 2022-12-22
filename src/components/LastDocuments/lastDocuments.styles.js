@@ -61,7 +61,7 @@ export const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.4px",
   },
   lastRow: {
-    marginTop: -30,
+    marginTop: -5,
   },
   tablecard: {
     backgroundColor:"#313040",
